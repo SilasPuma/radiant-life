@@ -1,105 +1,171 @@
-<!-- this isnt ai lol i just typed it in vscode and then pasted it into here -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Radiant Life Church</title> 
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Radiant Life Church</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #185a9d 0%, #43cea2 100%);
+            color: #222;
+        }
+        header {
+            background: #fff;
+            box-shadow: 0 2px 8px #185a9d33;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #185a9d;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #185a9d;
+            background: #ffd200;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1.2rem;
+            border-radius: 0.4rem;
+            font-weight: bold;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav a:hover {
+            background: #185a9d;
+            color: #fff;
+        }
+        .hero {
+            background: rgba(255,255,255,0.9);
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 1rem;
+            max-width: 700px;
+            box-shadow: 0 4px 16px #185a9d22;
+            text-align: center;
+        }
+        .hero h2 {
+            color: #185a9d;
+            margin-bottom: 1rem;
+        }
+        .sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .section {
+            background: #fff;
+            border-radius: 0.8rem;
+            box-shadow: 0 2px 8px #185a9d22;
+            padding: 1.5rem;
+            width: 300px;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section h3 {
+            color: #43cea2;
+            margin-bottom: 0.7rem;
+        }
+        .section ul {
+            padding-left: 1.2rem;
+            text-align: left;
+        }
+        footer {
+            background: #185a9d;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 900px) {
+            .sections {
+                flex-direction: column;
+                align-items: center;
+            }
+            .section {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="radiantlife.png" alt="Radiant Life logo">
-      <span>Radiant Life</span>
+    <header>
+        <h1>Radiant Life Church</h1>
+        <nav>
+            <a href="#bible-studies">Bible Studies</a>
+            <a href="#kids">Kids</a>
+            <a href="#youth">Youth</a>
+            <a href="#events">Events</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h2>Welcome to Radiant Life Church</h2>
+        <p>Connecting people to God, each other, and our community. Join us for worship, growth, and fellowship!</p>
+        <a href="#contact" style="background:#ffd200;color:#185a9d;padding:0.7rem 1.5rem;border-radius:0.5rem;text-decoration:none;font-weight:bold;box-shadow:0 2px 8px #185a9d33;transition:background 0.2s;">Plan Your Visit</a>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#new">New Here?</a></li>
-        <li><a href="#ministries">Ministries</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#sermons">Sermons</a></li>
-        <li><a href="#give">Give</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Welcome to Radiant Life Church</h1>
-    <p>slogan. slogan. slogan. (idk lol)</p>
-    <a href="#plan" class="btn">Plan Your Visit</a>
-  </section>
-
-  <section id="new" class="info">
-    <h2>Visit us</h2>
-    <div class="campus">
-      <h3>Central campus</h3>
-      <p>address (numberss)<br>(city, state) (zip code)</p>
-      <p>Sundays (time1) &amp; (time2)<br>Wednesdays (time) (Traditional, idk abt ur church but my church has like a tradicional service on wednesday nights)</p>
-      <a href="#" class="btn small">Map</a>
+    <div class="sections">
+        <div class="section" id="bible-studies">
+            <h3>Bible Studies</h3>
+            <ul>
+                <li>Weekly Adult Bible Study - Wednesdays 7pm</li>
+                <li>Women's Group - Mondays 6pm</li>
+                <li>Men's Breakfast & Study - Saturdays 8am</li>
+                <li>Online Devotionals</li>
+            </ul>
+        </div>
+        <div class="section" id="kids">
+            <h3>Kids Ministry</h3>
+            <ul>
+                <li>Sunday School (Ages 3-11)</li>
+                <li>Kids Worship & Games</li>
+                <li>Vacation Bible School (Summer)</li>
+                <li>Safe, Fun, and Faith-Filled!</li>
+            </ul>
+        </div>
+        <div class="section" id="youth">
+            <h3>Youth Group</h3>
+            <ul>
+                <li>Friday Night Youth (Ages 12-18)</li>
+                <li>Youth Worship Band</li>
+                <li>Retreats & Camps</li>
+                <li>Service Projects</li>
+            </ul>
+        </div>
+        <div class="section" id="events">
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li>Community BBQ - July 15</li>
+                <li>Family Movie Night - August 5</li>
+                <li>Mission Trip Info Night - September 10</li>
+            </ul>
+        </div>
     </div>
-    <div class="campus">
-      <h3>second campus (if u have one)</h3>
-      <p>(address numbers and street)<br>(city, state) (zip)</p>
-      <p>Sundays 9:15 &amp; 11 AM<br>Thursdays 7 PM (Young Adults)</p>
-      <a href="#" class="btn small">view on a map</a>
+    <div class="sections">
+        <div class="section" id="about">
+            <h3>About Us</h3>
+            <p>Radiant Life Church is part of the Assemblies of God. We are passionate about loving God, loving people, and making a difference in our world. All are welcome!</p>
+        </div>
+        <div class="section" id="contact">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:info@radiantlifechurch.org">info@radiantlifechurch.org</a></p>
+            <p>123 Main St, Your City, CA</p>
+            <p>Sunday Service: 10:30am</p>
+        </div>
     </div>
-  </section>
-
-  <section id="ministries">
-    <h2>Ministries</h2>
-    <ul>
-      <li>Children (small child)</li>
-      <li>Students (medium child)</li>
-      <li>Young Adults (large child)</li>
-      <li>Adults (extra-large child)</li>
-    </ul>
-    <a href="#ministries" class="btn small">See all (if u have any other ministries)</a>
-  </section>
-
-  <section id="events">
-    <h2>Upcoming events</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>upcoming event 1</h3>
-        <p>date and location</p>
-        <a href="#" class="btn small">Learn more</a>
-      </div>
-      <div class="card">
-        <h3>upcoming event 2</h3>
-        <p>date and location</p>
-        <a href="#" class="btn small">Learn more</a>
-      </div>
-      <div class="card">
-        <h3>upcoming event 3</h3>
-        <p>locaiton and date</p>
-        <a href="#" class="btn small">Learn more</a>
-      </div>
-    </div>
-    <a href="#events" class="btn small">See the full calendar</a>
-  </section>
-
-  <section id="sermons">
-    <h2>Latest sermon (if u want this on ur site, to show who preached most recently)</h2>
-    <h3>person | verse</h3>
-    <p>person | verse or date of when theyre gonne be at the service</p>
-    <a href="#" class="btn">Go to Sermon Library</a>
-  </section>
-
-  <footer>
-    <div class="foot-info">
-      <div>Central campus: (address of campus)</div>
-      <div>Second campus (if present): (second address)</div>
-      <div>📞 (phone num) • ✉️ (email addr)</div>
-    </div>
-    <nav class="foot-nav">
-      <a href="#ministries">Ministries (view all of them)</a>
-      <a href="#sermons">Sermons (most recent sermons)</a>
-      <a href="#contact">Contact</a>
-      <a href="#give">Give (if u want a donation page idk)</a>
-    </nav>
-    <div class="copy">© 2025 Radiant Life Church</div>
-  </footer>
+    <footer>
+        &copy; 2024 Radiant Life Church &mdash; Assemblies of God
+    </footer>
 </body>
 </html>
